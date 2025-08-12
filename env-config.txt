@@ -1,0 +1,15 @@
+# Copy this content to .env.local file
+
+# OpenAI API Key for AI-generated summaries
+REACT_APP_OPENAI_API_KEY=your-actual-openai-key-here
+
+# Alpha Vantage API Key for real market data
+# Get free key at: https://www.alphavantage.co/support/#api-key
+REACT_APP_ALPHA_VANTAGE_KEY=your-alpha-vantage-key-here
+
+# Instructions:
+# 1. Create a new file called '.env.local' in D:\py\md\
+# 2. Copy the content above into that file
+# 3. Replace the placeholder values with your real API keys
+# 4. Save the file
+# 5. Restart the dashboard

@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background font-mono antialiased text-gray-300;
+    background: linear-gradient(135deg, #000000 0%, #111111 100%);
+  }
+  
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #333333 #000000;
+  }
+  
+  *::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #000000;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background: #333333;
+    border-radius: 4px;
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background: #555555;
+  }
+}
+
+@layer components {
+  .skeleton {
+    @apply animate-pulse bg-gray-800 rounded;
+  }
+  
+  .flow-positive {
+    @apply text-terminal-green;
+    text-shadow: 0 0 2px #00ff41;
+  }
+  
+  .flow-negative {
+    @apply text-outflow;
+    text-shadow: 0 0 2px #ff0040;
+  }
+  
+  .flow-neutral {
+    @apply text-neutral;
+  }
+  
+  .badge-normal {
+    @apply bg-gray-800 text-gray-300 px-2 py-1 rounded text-xs font-medium border border-gray-600;
+  }
+  
+  .badge-elevated {
+    @apply bg-yellow-900 text-terminal-amber px-2 py-1 rounded text-xs font-medium border border-yellow-600;
+    text-shadow: 0 0 1px #ffb000;
+  }
+  
+  .badge-extreme {
+    @apply bg-red-900 text-outflow px-2 py-1 rounded text-xs font-medium border border-red-600;
+    text-shadow: 0 0 1px #ff0040;
+  }
+  
+  .card {
+    @apply bg-card border border-border rounded shadow-lg;
+    background: linear-gradient(145deg, #111111, #0a0a0a);
+    box-shadow: 0 4px 8px rgba(0, 255, 65, 0.05);
+  }
+  
+  .data-table {
+    @apply w-full text-sm text-gray-300;
+  }
+  
+  .data-table th {
+    @apply text-left font-medium text-terminal-amber pb-2 border-b border-border;
+    text-shadow: 0 0 1px #ffb000;
+  }
+  
+  .data-table td {
+    @apply py-2 border-b border-gray-800 last:border-b-0;
+  }
+  
+  .data-table tr:hover {
+    @apply bg-gray-900 cursor-pointer;
+    box-shadow: 0 0 5px rgba(0, 255, 65, 0.15);
+  }
+  
+  .sparkline {
+    @apply h-8 w-16;
+  }
+  
+  .flow-tape {
+    @apply whitespace-nowrap overflow-hidden;
+  }
+  
+  .flow-tape-item {
+    @apply inline-block px-4 py-2 mx-2 rounded text-sm font-medium;
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@layer utilities {
+  .text-currency {
+    @apply font-mono text-sm tabular-nums;
+  }
+  
+  .animate-marquee {
+    animation: marquee 30s linear infinite;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}

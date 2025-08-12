@@ -1,0 +1,17 @@
+{
+  "name": "capital-flows-mock-api",
+  "version": "1.0.0",
+  "description": "Mock API server for Capital Flows Dashboard development and testing",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "keywords": ["capital-flows", "mock-api", "financial-data"],
+  "author": "Capital Flows Dashboard",
+  "license": "MIT"
+}

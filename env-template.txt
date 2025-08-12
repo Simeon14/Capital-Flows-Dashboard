@@ -1,0 +1,19 @@
+# OpenAI API Key for AI-generated summaries
+REACT_APP_OPENAI_API_KEY=your-actual-openai-key-here
+
+# Data Provider API Keys - Choose ONE:
+
+# Alpha Vantage (recommended for free start)
+# Get free key at: https://www.alphavantage.co/support/#api-key
+REACT_APP_ALPHA_VANTAGE_KEY=your-alpha-vantage-key-here
+
+# OR Polygon.io (professional grade - $99/month)
+# Get key at: https://polygon.io/pricing
+# REACT_APP_POLYGON_KEY=your-polygon-key-here
+
+# Instructions:
+# 1. Copy this file and rename it to '.env.local'
+# 2. Replace the placeholder values with your real API keys
+# 3. Comment out the provider you're NOT using (add # at start of line)
+# 4. Save the file
+# 5. Restart the dashboard with 'npm start'
